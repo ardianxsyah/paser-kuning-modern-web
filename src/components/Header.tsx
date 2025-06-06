@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Home, Book, FileText, Image, Gallery, News } from 'lucide-react';
+import { Home, Book, FileText, Image, Palette, Newspaper } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,9 +12,9 @@ const Header = () => {
     { href: '/', label: 'Beranda', icon: Home },
     { href: '/budaya', label: 'Budaya', icon: Book },
     { href: '/sejarah', label: 'Sejarah', icon: FileText },
-    { href: '/kerajinan', label: 'Kerajinan', icon: Gallery },
+    { href: '/kerajinan', label: 'Kerajinan', icon: Palette },
     { href: '/artefak', label: 'Artefak', icon: Image },
-    { href: '/berita', label: 'Berita', icon: News },
+    { href: '/berita', label: 'Berita', icon: Newspaper },
   ];
 
   const isActive = (path: string) => location.pathname === path;

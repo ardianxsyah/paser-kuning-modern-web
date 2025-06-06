@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { Book, FileText, Gallery, Image, News, Users } from 'lucide-react';
+import { Book, FileText, Palette, Image, Newspaper, Users } from 'lucide-react';
 
 const Index = () => {
   const features = [
@@ -22,7 +22,7 @@ const Index = () => {
       link: "/sejarah"
     },
     {
-      icon: Gallery,
+      icon: Palette,
       title: "Kerajinan Tradisional",
       description: "Temukan keindahan anyaman rotan, ukiran kayu, dan tenun khas Paser.",
       link: "/kerajinan"
@@ -34,7 +34,7 @@ const Index = () => {
       link: "/artefak"
     },
     {
-      icon: News,
+      icon: Newspaper,
       title: "Berita & Kegiatan",
       description: "Informasi terbaru tentang kegiatan pelestarian budaya dan acara adat.",
       link: "/berita"
